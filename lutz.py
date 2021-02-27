@@ -38,3 +38,20 @@ print(bob.lastName())
 print(sue.lastName())
 sue.giveRaise(0.12)
 print(int(sue.pay))
+
+# Numbers
+
+a = 4
+b = 7
+
+print(2 == 2.0)
+
+pi = math.pi
+e = math.e
+
+print(math.sin(2 * math.pi / 180))
+print(pow(2, 9))
+print(min(3, 1, 7, 5), max(9, 44, 2, 56))
+
+s = {1, 2, 'yes', 'no', 8}
+print(type(s))

@@ -55,3 +55,9 @@ print(min(3, 1, 7, 5), max(9, 44, 2, 56))
 
 s = {1, 2, 'yes', 'no', 8}
 print(type(s))
+
+first = 5
+second = first
+first = 10
+print(first)
+print(second)

@@ -1,4 +1,7 @@
 import sys
+import math
+
+
 print(sys.platform)
 
 print(2 ** 100)
@@ -9,3 +12,29 @@ print('hello world')
 
 arr = [1, 2, 3, 'yes']
 print(arr)
+
+print(len(str(2 ** 1000000)))
+print(math.pi)
+print(math.sqrt(87))
+
+m = ['bb', 'aa', 'cc']
+m.sort()
+print(m)
+
+class Worker:
+    def __init__(self, name, pay):
+        self.name = name
+        self.pay = pay
+    def lastName(self):
+        return self.name.split()[-1]
+    def giveRaise(self, percent):
+        self.pay *= (1.0 + percent)
+
+
+bob = Worker('Bob Smith', 5000)
+sue = Worker('Sue Jones', 6000)
+
+print(bob.lastName())
+print(sue.lastName())
+sue.giveRaise(0.12)
+print(int(sue.pay))

@@ -63,3 +63,11 @@ print(first)
 print(second)
 
 # str str
+
+# part 8
+
+# exception
+# arr = [1, 2, 'yes']
+# arr.sort()
+# print(arr)
+

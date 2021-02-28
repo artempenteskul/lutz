@@ -71,3 +71,13 @@ print(second)
 # arr.sort()
 # print(arr)
 
+# exercises
+
+str = 'green %s and %s' % ('eggs', 'S')
+print(str)
+
+x = 'spam'
+y = 'eggs'
+x, y = y, x
+print(x)
+print(y)

@@ -81,3 +81,10 @@ y = 'eggs'
 x, y = y, x
 print(x)
 print(y)
+
+if x > y:
+    x = 1
+    y = 2
+else:
+    x = 2
+    y = 1

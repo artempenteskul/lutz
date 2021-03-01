@@ -88,3 +88,12 @@ if x > y:
 else:
     x = 2
     y = 1
+
+print()
+
+a = 'spam'
+b = 99
+c = ['eggs']
+
+print(a, b, c)
+

@@ -97,3 +97,11 @@ c = ['eggs']
 
 print(a, b, c)
 
+yyy = 'killer rabbit'
+if yyy == 'roger':
+    print('how is jess?')
+elif yyy == 'bugs':
+    print('whats up, doc?')
+else:
+    print('Run away!')
+

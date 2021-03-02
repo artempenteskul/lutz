@@ -120,3 +120,9 @@ d3 = dict(zip(keys, vals))
 print(d3)
 
 # generators & iterators
+
+# documentation
+print(dir([]))
+
+for i in range(50):
+    print('hello %d' % i)

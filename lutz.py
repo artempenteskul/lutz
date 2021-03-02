@@ -105,3 +105,16 @@ elif yyy == 'bugs':
 else:
     print('Run away!')
 
+# Loops
+
+# while True:
+#     print('Type Ctrl-C to stop me!')
+
+T = [(1, 2), (3, 4), (5, 6)]
+for (a, b) in T:
+    print(a, b)
+
+keys = ['spam', 'eggs', 'toast']
+vals = [1, 4, 6]
+d3 = dict(zip(keys, vals))
+print(d3)

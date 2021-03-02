@@ -118,3 +118,5 @@ keys = ['spam', 'eggs', 'toast']
 vals = [1, 4, 6]
 d3 = dict(zip(keys, vals))
 print(d3)
+
+# generators & iterators

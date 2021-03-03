@@ -124,5 +124,21 @@ print(d3)
 # documentation
 print(dir([]))
 
-for i in range(50):
-    print('hello %d' % i)
+# for i in range(50):
+#     print('hello %d' % i)
+
+# functions
+
+def times(q, w):
+    return q * w
+print(times(5, 9))
+
+def intersect(seq1, seq2):
+    res = []
+    for smth in seq1:
+        if smth in seq2:
+            res.append(smth)
+    return res
+s1 = 'SPAM'
+s2 = 'SCAM'
+print(intersect(s1, s2))

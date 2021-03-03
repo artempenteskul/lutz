@@ -142,3 +142,10 @@ def intersect(seq1, seq2):
 s1 = 'SPAM'
 s2 = 'SCAM'
 print(intersect(s1, s2))
+
+m, n = 4, 9
+def all_global():
+    global k
+    k = m + n
+    print(k)
+all_global()

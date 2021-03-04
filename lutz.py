@@ -182,3 +182,24 @@ def min3(*args):
     return tpm[0]
 print(min3([1, 1], [1, 3], [2, 5]))
 
+# extra functions
+l = [1, 3, 4, 4, 5, 5, 9]
+sum = 0
+while l:
+    sum += l[0]
+    l = l[1:]
+print(sum)
+
+# lambda
+def knights():
+    title = 'Sir'
+    action = (lambda x: title + ' ' + x)
+    return action
+act = knights()
+print(act('Robin'))
+
+counters =  [1, 2, 3, 7, 8, 89, 99]
+print(list(map((lambda x: x + 3), counters)))
+
+# list(range(-5, 5))
+# print(filter((lambda x: x > 0), range(-5, 5)))

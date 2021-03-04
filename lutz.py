@@ -203,3 +203,10 @@ print(list(map((lambda x: x + 3), counters)))
 
 # list(range(-5, 5))
 # print(filter((lambda x: x > 0), range(-5, 5)))
+
+# generators & iterators
+def gensquares(N):
+    for i in range(N):
+        yield i ** 2
+for i in gensquares(5):
+    print(i, end= ' : ')

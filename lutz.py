@@ -149,3 +149,36 @@ def all_global():
     k = m + n
     print(k)
 all_global()
+
+# arguments
+def func(spam, eggs, toast=0, ham=0):
+    print(spam, eggs, toast, ham)
+func(1, 2)
+func(1, ham=1, eggs=0)
+
+def f(a, *args, **kwargs):
+    print(a, args, kwargs)
+f(1, (1, 2), x=1, y=2)
+
+# поиск минимального числа
+def min1(*args):
+    res = args[0]
+    for arg in args:
+        if arg < res:
+            res = arg
+    return res
+print(min1(1, 23, 89, 81, -88,))
+
+def min2(first, *rest):
+    for arg in rest:
+        if arg < first:
+            first = arg
+        return first
+print(min2('bb', 'aa'))
+
+def min3(*args):
+    tpm = list(args)
+    tpm.sort()
+    return tpm[0]
+print(min3([1, 1], [1, 3], [2, 5]))
+

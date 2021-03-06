@@ -210,3 +210,9 @@ def gensquares(N):
         yield i ** 2
 for i in gensquares(5):
     print(i, end= ' : ')
+print('its working')
+
+# modules
+
+import sys
+print(sys.path)

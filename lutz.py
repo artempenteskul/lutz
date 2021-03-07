@@ -212,7 +212,7 @@ for i in gensquares(5):
     print(i, end= ' : ')
 print('its working')
 
-# modules
 
+# modules
 import sys
 print(sys.path)

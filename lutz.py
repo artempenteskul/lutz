@@ -219,3 +219,10 @@ print(sys.path)
 
 # from __future__ import ...
 
+# classes
+class C1():
+    def __init__(self, name):
+        self.name = name
+I1 = C1('Bob')
+I2 = C1('Mel')
+print(I1.name)

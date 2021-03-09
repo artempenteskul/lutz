@@ -220,9 +220,39 @@ print(sys.path)
 # from __future__ import ...
 
 # classes
-class C1():
+class C1:
     def __init__(self, name):
         self.name = name
 I1 = C1('Bob')
 I2 = C1('Mel')
 print(I1.name)
+
+class FirstClass:
+    def setdata(self, value):
+        self.value = value
+
+    def display(self):
+        print(self.value)
+
+first = FirstClass()
+second = FirstClass()
+
+first.setdata('King Arthur')
+second.setdata('3.14159')
+
+class SecondClass(FirstClass):
+    def display(self):
+        print('Current value = "%s"' % self.value)
+
+class ThirdClass(SecondClass):
+    def __init__(self, value):
+        self.value = value
+
+    def __add__(self, other):
+        return ThirdClass(self.value + other)
+
+    def __str__(self):
+        return '[ThirdClass: %s]' % self.value
+
+    def mul(self, other):
+        self.value *= other

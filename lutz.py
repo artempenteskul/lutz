@@ -294,3 +294,8 @@ tom.giveRaise(.10)
 print(tom.lastName())
 print(tom)
 
+class nextClass:
+    def printer(self, text):
+        self.message = text
+        print(self.message)
+

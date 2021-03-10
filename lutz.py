@@ -299,3 +299,61 @@ class nextClass:
         self.message = text
         print(self.message)
 
+# end of classes (class reload)
+class Number:
+    def __init__(self, start):
+        self.data = start
+
+    def __sub__(self, other):
+        return Number(self.data - other)
+
+x = Number(5)
+y = x - 2
+print(y.data)
+
+class Indexer:
+    def __getitem__(self, index):
+        return index ** 2
+
+x = Indexer()
+print(x[9])
+
+class Squares:
+    def __init__(self, start, stop):
+        self.value = start - 1
+        self.stop = stop
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.value == self.stop:
+            raise StopIteration
+        self.value += 1
+        return self.value ** 2
+
+# class AddBoth:
+#     def __str__(self):
+#         return '[Value: %s]' % self.data
+
+class Callee:
+    def __call__(self, *args, **kwargs):
+        print('Called:', args, kwargs)
+
+c = Callee()
+print(c(1, 2, 3))
+
+class Callback:
+    def __init__(self, color):
+        self.color = color
+
+    def __call__(self):
+        print('turn', self.color)
+
+cb1 = Callback('blue')
+cb2 = Callback('green')
+
+# B1 = Button(command=cb1)
+# B2 = Button(command=cb2)
+# cb1()
+# cb2()

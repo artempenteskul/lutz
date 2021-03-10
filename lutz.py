@@ -357,3 +357,15 @@ cb2 = Callback('green')
 # B2 = Button(command=cb2)
 # cb1()
 # cb2()
+
+#templates
+class Wrapper:
+    def __init__(self, object):
+        self.wrapped = object
+
+    def __getattr__(self, attrname):
+        print('Trace:', attrname)
+        return getattr(self.wrapped, attrname)
+
+def factory(aClass, *args, **kwargs):
+    return aClass(*args, **kwargs)

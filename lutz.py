@@ -369,3 +369,5 @@ class Wrapper:
 
 def factory(aClass, *args, **kwargs):
     return aClass(*args, **kwargs)
+
+# end of 6th part

@@ -392,3 +392,4 @@ except:
     print('got exception')
 
 # classes exceptions
+# the rnd of the main part of book

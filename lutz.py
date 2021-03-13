@@ -391,3 +391,4 @@ try:
 except:
     print('got exception')
 
+# classes exceptions

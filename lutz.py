@@ -382,3 +382,12 @@ def factory(aClass, *args, **kwargs):
 #     print('continuing')
 #
 # catcher()
+
+def action():
+    pass
+
+try:
+    action()
+except:
+    print('got exception')
+

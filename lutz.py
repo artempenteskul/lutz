@@ -371,3 +371,14 @@ def factory(aClass, *args, **kwargs):
     return aClass(*args, **kwargs)
 
 # end of 6th part
+
+# exceptions
+
+# def catcher():
+#     try:
+#         fetcher(x, 4)
+#     except IndexError:
+#         print('got exception')
+#     print('continuing')
+#
+# catcher()
